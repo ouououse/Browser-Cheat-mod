@@ -86,15 +86,7 @@ text-align:center;
   </a>
   <div class="sample">
 ホーミング 
-<input type="button" value="0.15 ON" onclick="homing8()" />
-<input type="button" value="0.25 ON" onclick="homing()" />
-<input type="button" value="0.5 ON" onclick="homing2()" />
-<input type="button" value="1 ON" onclick="homing3()" />
-<input type="button" value="2 ON" onclick="homing7()" />
-<input type="button" value="3 ON" onclick="homing6()" />
-<input type="button" value="5 ON" onclick="homing5()" />
-<input type="button" value="OFF" onclick="homing4()" />
-<br>
+<el-button @click="executeFunction(ex)">ON</el-button>
  
 発射レート
 <input type="button" value="1.25" onclick="siya()" />
