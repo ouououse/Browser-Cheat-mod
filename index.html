@@ -4,138 +4,36 @@
 
 <meta charset="UTF-8">
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-            color: #FFF;
-        }
-        
-        #H5AlertView {
-            width: 220px;
-            height: 300px;
-            position: absolute;
-            left: -110px;
-            top: 150px;
-            text-align: center;
-            zoom:1.6;
-        }
-        
-        .ayimgui {
-            position: fixed;
-            width: 360px;
-            height: 320px;
-            top: calc(50% - 180px);
-            left: calc(50% - 180px);
-            z-index: 999;
-            background-image: url('https://s3.ap-northeast-1-ntt.wasabisys.com/ak1520d-filenow-4/files/20240519-1409_b5814abad90fda0de24a83c295b1542c.png?response-content-disposition=attachment');
-            background-position: center;
-            background-size: cover;
-            overflow: hidden;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-        
-        .onlyTitle {
-            height: 21px !important;
-        }
-        
-        .ayimgui .aytitle {
-            padding: 0 5px;
-            font-size: 16px;
-            background-color: black;
-        }
-        
-        .ayimgui .aytitle .titleClose {
-            position: absolute;
-            top: 3px;
-            right: 6px;
-            color: #ff3e2b;
-        }
-        
-        .ayimgui .aytitle .titleClose:hover {
-            color: #8ae;
-        }
-        
-         .ayimgui .aybody {
-            padding: 15px;
-            height: calc(100% - 21px - 15px - 15px);
-            overflow: auto;
-            font-size: 14px;
-        }
-        
-        
-        .el-button {
-            font-size: 20px;
-            padding: 7px 10px;
-            line-height: 14px;
-            color: #FFF;
-            background-color: rgba(255, 255, 255, 0.5);
-            border: none;
-            margin-bottom: 10px;
-        }
-        
-        .el-button:hover {
-            color: #FFF;
-            background-color: #ff94cA;
-        }
-        
-        .el-button:focus,
-        .el-button:hover {
-            color: #000;
-            background-color: #ff94ca;
-        }
 
-        @keyframes rainbow {
-            0% { color: red; }
-            16.67% { color: orange; }
-            33.33% { color: yellow; }
-            50% { color: green; }
-            66.67% { color: blue; }
-            83.33% { color: indigo; }
-            100% { color: violet; }
-        }
-
-        .rainbow-text {
-            animation: rainbow 4s infinite;
-        }
-
-.el-tabs__item {
-    width: 47px; /* 固定値で幅を設定 */
-    background-color: rgba(255, 255, 255, 0.5); /* 半透明の背景色 */
-    font-size: 16px; /* フォントサイズ */
-    padding: 5px 10px; /* 上下の余白を減らして固定値に設定 */
-    border-radius: 5px; /* 角丸 */
-    border: 1px solid #ccc; /* 境界線 */
-    margin-right: 5px; /* タブの間隔 */
-    text-align: center; /* テキストを真ん中に配置 */
+.sample {
+  width: 280px;
+  height: 280px;
+  border: solid 3px;
+  overflow: scroll;
 }
 
-.el-tabs__item:last-child {
-    margin-right: 0; /* 最後のタブに間隔を付けない */
+body {
+  background-image: url('写真のURL');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.app{
+height:250px;
+width:300px;
+background-color:blue;
+overflow-y: scroll;
 }
 
-.el-tabs__item.is-active {
-    background-color: rgba(255, 255, 255, 0.8); /* タップしたときの背景色を半透明の白に設定 */
-    color: #000000; /* タップしたときの文字色を黒に設定 */
+.menu{
+margin:5px;
+border:2px solid #78eb7f;
+background-color:#78eb7f;
+color:white;
+font-size:23px;
+text-align:center;
 }
-
-.el-tabs__content {
-    padding: 20px; /* タブのコンテンツの余白 */
-    border-top: none; /* 上部の境界線を削除 */
-    border-radius: 0 0 5px 5px; /* 下部の角丸 */
-}
-
-
-        /* タブのゲージを非表示にする */
-.el-tabs__active-bar {
-    display: none;
-}
-
-
-
-    </style>
+</style>
+    
 </head>
 <body>
    <script>
